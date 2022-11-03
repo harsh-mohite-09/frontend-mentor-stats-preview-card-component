@@ -16,8 +16,8 @@ body {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
-  display: flex;
   height: 100vh;
+  display: flex;
   justify-content: center;
   align-items: center;
   font-family: var(--inter);
@@ -37,7 +37,6 @@ body {
   box-sizing: border-box;
   background-color: var(--dark-desaturated-blue-card-background);
   width: 50%;
-  /* min-width: 540px; */
   padding: 4.5em;
   padding-right: 5.5em;
   display: flex;
@@ -96,6 +95,11 @@ h2 {
 }
 
 @media (max-width: 375px) {
+  body {
+    padding: 50px 0;
+    height: 100%;
+  }
+
   .container {
     flex-direction: column;
     width: 85%;
